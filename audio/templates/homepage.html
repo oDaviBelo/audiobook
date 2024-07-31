@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+{%block body%}
+<body>
+    {%block forms%}
+    <form action="" method="post">
+        {{form.csrf_token}}
+        {{ form.txt.label }} {{form.txt}}
+        {{form.send}}
+
+    </form>
+    {%endblock%}
+    <audio src="../static/textToSpeech.mp3"></audio>
+</body>
+{%endblock%}
+
+</html>
