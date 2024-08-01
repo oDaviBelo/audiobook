@@ -1,3 +1,16 @@
+body{
+    background-color: #111;
+    color: #fff;
+}
+.text_area{
+    background-color: #1b2531;
+    color: inherit;
+    padding: 1rem;
+}
+header{
+    display: flex;
+    justify-content: center;
+}
 header nav{
     display: flex;
     flex-direction: row;
@@ -15,6 +28,39 @@ header nav li a{
     text-decoration: none;
     color: inherit;
 }
+.flags{
+    position: fixed;
+    top: 1;
+    right: 0;
+    margin-right: 2rem;
+}
+.language .flags{
+    display: flex;
+    flex-direction: row;
+    background-color: #000;
+    padding: 0.5rem;
+    border-radius: 1rem 1rem 1rem 1rem;
+    gap: 1rem;
+}
+.light_button .icon{
+        display: flex;
+
+}
+.dark_button .icon{
+    display: flex;
+}
+.icon{
+    height: 2rem;
+}
+.circle_button .circle_button_trade{
+    height: 2rem;
+    width: 2rem;
+    border: 1px solid #000;
+    border-radius: 1rem 1rem 1rem 1rem;
+    background-color: rgb(217, 217, 200);
+}
+
+
 
 .forms{
     display: flex;

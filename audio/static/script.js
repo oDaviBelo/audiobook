@@ -30,6 +30,22 @@ document.addEventListener('keyup',()=>{
     }
 })
 
+function pt_br(){
+    if(window.location.href!='/pt_br'){
+        window.location.assign('/pt_br')
+    }
+}
 
-
-
+function en(){
+    if(window.location.href!='/en'){
+        window.location.assign('/en')
+    }
+}
+document.addEventListener('DOMContentLoaded',()=>{
+    if(window.location.href=='http://127.0.0.1:5000/pt_br'){
+        about = document.querySelector('.about').innerHTML = 'Sobre'
+        contact = document.querySelector('.contact').innerHTML = 'Contato'
+        label_main = document.querySelector('.label_main').innerHTML = 'Texto para Áudio (máx: 200 caracteres)'
+        submit = document.querySelector('.submit').value = 'Transforme'
+    }
+})

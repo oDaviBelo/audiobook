@@ -3,17 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/i18next@21.6.0/dist/umd/i18next.min.js"></script>
     <link rel="stylesheet" href="../static/style.css">
     <title>Document</title>
+
 </head>
 {%block body%}
 <body>
     <header>
         <nav>
             <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="" class="about">About</a></li>
+            <li><a href="" class="contact">Contact</a></li>
         </nav>
+        <div class="language">
+            <div class="flags">
+                <div class="pt-br" >
+                    <img class='icon' src="../static/assets/brasil.png" alt="" onclick="pt_br()">
+                </div>
+                
+                <div class="en">
+                    <img class='icon' src="../static/assets/estados-unidos-da-america.png" alt="" onclick="en()">
+                </div>  
+            </div>
+        </div>
     </header>
     <main>
         <div class="forms">
