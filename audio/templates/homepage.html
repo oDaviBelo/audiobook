@@ -3,20 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
     <title>Document</title>
 </head>
 {%block body%}
 <body>
-    {%block forms%}
-    <form action="" method="post">
-        {{form.csrf_token}}
-        {{ form.txt.label }} {{form.txt}}
-        {{form.send}}
+    <header>
+        <nav>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+        </nav>
+    </header>
+    <main>
+        <div class="forms">
+            {%block forms%}
+            <form action="" method="post">
+                {{form.csrf_token}}
+                {{ form.txt.label(class_="label_main") }} 
+                {{form.txt(class_="text_area")}}
+                <p class="num_char"></p>
+                {{form.send(class_='submit')}}
+            </form>
+            {%endblock%}
+        </div>
+    </main>
+    <script src="../static/script.js"></script>
 
-    </form>
-    {%endblock%}
-    <audio src="../static/textToSpeech.mp3"></audio>
 </body>
+
 {%endblock%}
+    
+   
 
 </html>

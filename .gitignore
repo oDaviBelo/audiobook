@@ -1,3 +1,7 @@
 mykey.py
 venv
 venv/
+__pycache__
+__pycache__/mykey.cpython-312.pyc
+audio/__pycache__/forms.cpython-312.pyc
+audio/__pycache__/routes.cpython-312.pyc

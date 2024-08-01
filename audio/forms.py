@@ -1,8 +1,9 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField,SubmitField
+from wtforms import StringField,SubmitField,TextAreaField
 from wtforms.validators import DataRequired
 
 
 class Transform(FlaskForm):
-    txt = StringField("Type your text",validators=[DataRequired()])
-    send = SubmitField('Send')
+    txt = TextAreaField("Text to Speech (max:200 char)",validators=[DataRequired()])
+    send = SubmitField('Transform')
+    
