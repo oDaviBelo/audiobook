@@ -1,0 +1,1 @@
+INSERT INTO my_info(texto,audio) VALUES('ca','3')
